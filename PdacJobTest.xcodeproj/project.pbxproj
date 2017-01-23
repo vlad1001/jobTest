@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F521D14F1E34EB8100D61634 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F521D14E1E34EB8100D61634 /* MapKit.framework */; };
 		F54B7DBD1E34DF2500EB749A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54B7DBC1E34DF2500EB749A /* AppDelegate.swift */; };
 		F54B7DBF1E34DF2500EB749A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54B7DBE1E34DF2500EB749A /* ViewController.swift */; };
 		F54B7DC21E34DF2500EB749A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F54B7DC01E34DF2500EB749A /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F521D14E1E34EB8100D61634 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		F54B7DB91E34DF2500EB749A /* PdacJobTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PdacJobTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F54B7DBC1E34DF2500EB749A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F54B7DBE1E34DF2500EB749A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +31,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F521D14F1E34EB8100D61634 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F521D14D1E34EB8100D61634 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F521D14E1E34EB8100D61634 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F54B7DB01E34DF2500EB749A = {
 			isa = PBXGroup;
 			children = (
 				F54B7DBB1E34DF2500EB749A /* PdacJobTest */,
 				F54B7DBA1E34DF2500EB749A /* Products */,
+				F521D14D1E34EB8100D61634 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +109,14 @@
 					F54B7DB81E34DF2500EB749A = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -297,6 +317,7 @@
 				F54B7DCD1E34DF2500EB749A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
